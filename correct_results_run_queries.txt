@@ -1,0 +1,377 @@
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=6 -DNUM_OF_THREADS=256
+initializing kernels from cl/q1_vec.cl
+Time E (Load Code & Compilation): 0.085260
+Time 1 (Moving data to GPU): 0.152723
+Data size processed by kernel: 102020655
+Time S (Executing Kernel)
+Executing Kernel on 6001215 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.017174
+581298 87087146698 8273638758445 860402366816021 114530 22973 0 0
+0 0 0 0 0 0 0 0
+591430 88670832732 8423318306237 875921369571329 115636 23087 0 0
+0 0 0 0 0 0 0 0
+1159521 173810444200 16508367372142 1716877795356407 228353 45413 0 0
+0 0 0 0 0 0 0 0
+transferColumn	0.007285
+transferColumn	0.015218
+transferColumn	0.014633
+transferColumn	0.001354
+transferColumn	0.013599
+transferColumn	0.001605
+transferColumn	0.001498
+kernelExec	0.016463
+kernelReduce	0.000119
+transferResult	0.000001
+SUCCESS;0.055193;0.016463;0.000119
+Done
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=10 -DNUM_OF_THREADS=256
+initializing kernels from cl/q3.cl
+Time E (Load Code & Compilation): 0.085082
+Time 1 (Compilation): 0.085142
+Time 1 (Loading data (from disk) to GPU): 0.124328
+Data size processed by kernel: 63608513
+Time S (Executing Kernel)
+Executing Kernel on 1500000 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.013456
+4061810111 721268
+4058386989 720753
+3903240610 712290
+3845379359 723637
+3786730558 716876
+3783767952 725884
+3751539215 726626
+3731333094 714384
+3714074595 721118
+3673711452 726262
+transferColumn	0.001865
+transferIndex	0.004269
+transferColumn	0.000332
+transferColumn	0.004509
+transferIndex	0.003976
+transferColumn	0.008874
+transferColumn	0.016943
+transferColumn	0.004326
+kernelExec	0.012408
+kernelReduce	0.000394
+transferResult	0.000001
+SUCCESS;0.045097;0.012408;0.000394
+Done
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=5 -DNUM_OF_THREADS=256
+initializing kernels from cl/q4.cl
+Time E (Load Code & Compilation): 0.070820
+Time 1 (Compilation): 0.070882
+Time 1 (Loading data (from disk) to GPU): 0.069597
+Data size processed by kernel: 39004864
+Time S (Executing Kernel)
+Executing Kernel on 1500000 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.001320
+10594
+10476
+10410
+10556
+10487
+transferColumn	0.002298
+transferColumn	0.004466
+transferIndex	0.002810
+transferColumn	0.008905
+transferColumn	0.005919
+kernelExec	0.000783
+kernelReduce	0.000036
+transferResult	0.000001
+SUCCESS;0.024399;0.000783;0.000036
+Done
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=25 -DNUM_OF_THREADS=256
+initializing kernels from cl/q5.cl
+Time E (Load Code & Compilation): 0.072427
+Time 1 (Loading data (from disk) to GPU): 0.127856
+Data size processed by kernel: 70371179
+Time S (Executing Kernel)
+Executing Kernel on 150001 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.004418
+520355120002
+555020411697
+454101756954
+537244942566
+552950869967
+transferIndex	0.000338
+transferIndex	0.000002
+transferColumn	0.000003
+transferColumn	0.000001
+transferColumn	0.000025
+transferIndex	0.000442
+transferColumn	0.002203
+transferIndex	0.004364
+transferIndex	0.017472
+transferColumn	0.000006
+transferColumn	0.015792
+transferColumn	0.002003
+kernelExec	0.003385
+kernelReduce	0.000245
+transferResult	0.000003
+SUCCESS;0.042654;0.003385;0.000245
+Done
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=1 -DNUM_OF_THREADS=256
+initializing kernels from cl/q6.cl
+Time E (Load Code & Compilation): 0.063052
+Time 1 (Loading data from disk): 0.080427
+Data size processed by kernel: 48009720
+Time S (Executing Kernel)
+Executing Kernel on 6001215 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.005954
+1231410782283
+transferColumn	0.008982
+transferColumn	0.004410
+transferColumn	0.004402
+transferColumn	0.016165
+kernelExec	0.005246
+kernelReduce	0.000028
+transferResult	0.000002
+SUCCESS;0.033960;0.005246;0.000028
+Done
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=200 -DNUM_OF_THREADS=256
+initializing kernels from cl/q7.cl
+Time E (Load Code & Compilation): 0.088536
+Time 1 (Loading data from disk): 0.148518
+Data size processed by kernel: 96698349
+Time S (Executing Kernel)
+Executing Kernel on 10001 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.010160
+68261904
+transferIndex	0.000010
+transferColumn	0.000001
+transferIndex	0.000013
+transferColumn	0.006191
+transferIndex	0.016656
+transferIndex	0.002174
+transferIndex	0.000171
+transferColumn	0.012643
+transferColumn	0.002209
+kernelExec	0.008296
+kernelReduce	0.001026
+transferResult	0.000003
+SUCCESS;0.040071;0.008296;0.001026
+Done
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=10 -DNUM_OF_THREADS=256
+initializing kernels from cl/q12_vec.cl
+Time E (Load Code & Compilation): 0.076730
+Time 1 (Loading data from disk): 0.119712
+Data size processed by kernel: 72012154
+Time S (Executing Kernel)
+Executing Kernel on 1500000 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.010902
+0 0
+0 0
+6202 9324
+0 0
+0 0
+6200 9262
+0 0
+0 0
+0 0
+0 0
+transferColumn	0.003144
+transferIndex	0.004338
+transferColumn	0.016306
+transferColumn	0.005707
+transferColumn	0.007886
+transferColumn	0.008943
+kernelExec	0.009998
+kernelReduce	0.000126
+transferResult	0.000002
+SUCCESS;0.046326;0.009998;0.000126
+Done
+Usage for direct execution: ./jv2_opencl <querynumber> <work_factor> [<Path_to_db>]
+Usage for server listening mode: ./jv2_opencl [<Path_to_db>]
+NOTICE: Make sure, cl-files are present in ./cl
+Initialize OpenCL object and context
+number of platforms: 2
+ OpenCL 1.1 LINUX
+ Intel(R) OpenCL
+ number of devices: 1
+--> Using the first device of this platform!
+ OpenCL 1.0 CUDA 3.0.1
+ NVIDIA CUDA
+ERROR: clCreateContextFromType(-1)
+
+Global Memory Size: 50730328064d (49541336d KB/48380d MB)
+Local Memory Size: 32768 (32 KB/0 MB)
+Available for allocation: -202319872 (-197578 KB/-192 MB)
+Maximum work group size: 1024 
+Maximum read arg count: 480 
+Maximum write arg count: 480 
+Compute units: 12
+Time S (Load Code & Compilation)
+-DRESULT_SIZE=1 -DNUM_OF_THREADS=256
+initializing kernels from cl/q14_vec.cl
+Time E (Load Code & Compilation): 0.066388
+Time 1 (Loading data from disk): 0.115082
+Data size processed by kernel: 66813369
+Time S (Executing Kernel)
+Executing Kernel on 6001215 rows with 25600 threads in 100 workgroups
+Executing Reduce Kernel
+Time E (Executing Kernel): 0.003153
+4524288052301 27619493282271
+transferColumn	0.008487
+transferIndex	0.013499
+transferColumn	0.014400
+transferColumn	0.002198
+transferColumn	0.000232
+kernelExec	0.002362
+kernelReduce	0.000029
+transferResult	0.000002
+SUCCESS;0.038817;0.002362;0.000029
+Done
